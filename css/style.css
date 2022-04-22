@@ -1,0 +1,500 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol, ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+.l-wrapper {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 0 .8em;
+  position: relative
+}
+
+.l-segment {
+  margin: 2em 0;
+  padding-bottom: 2em;
+}
+
+.l-segment h1{
+color: #36477c;
+}
+
+.l-segment h2 {
+  color: #202c50;
+}
+
+@media (min-width: 600px) {
+  .l-segment {
+    margin: 3em 0
+  }
+}
+
+body {
+  color: #1b1a1a;
+  font-family:  -apple-system, BlinkMacSystemFont, "Oxygen",  "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Helvetica Neue", "Droid Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 17px
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  font-weight: 750;
+  margin-bottom: .5em
+}
+
+h1 {
+  font-size: 2.2em
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.7em
+  }
+}
+
+h2 {
+  font-size: 1.5em
+}
+
+@media (min-width: 600px) {
+  h2 {
+    font-size: 1.75em
+  }
+}
+
+.resources h2:not(:first-child) {
+  padding-top: 1.25em
+}
+
+h3 {
+  font-family:  -apple-system, BlinkMacSystemFont, "Oxygen",  "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Helvetica Neue", "Droid Sans", sans-serif;
+  font-size: 1em;
+  margin: .8em 0
+}
+
+a {
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.4);
+  color: #36507c;
+  outline: none;
+  text-decoration: none;
+  transition: all 200ms;
+  font-weight: 800
+}
+
+a:hover {
+  color: #171d36
+}
+
+a:focus {
+  border: 1px solid #36507c;
+  box-shadow: 0 2px 8px #4665a1
+}
+
+button, .c-guidelines__floaty-button {
+  -webkit-appearance: none;
+  background-color: #36507c;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: .8em;
+  font-weight: 300;
+  font-family: inherit;
+  letter-spacing: .5px;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: 200ms background-color
+}
+
+button:hover, .c-guidelines__floaty-button:hover {
+  color: #fff;
+  background-color: #171d36;
+  transition: 200ms background-color
+}
+
+p {
+  line-height: 1.4;
+  margin-bottom: .5em
+}
+
+li {
+  position: relative;
+  margin-bottom: 1.7em
+}
+
+@media (min-width: 600px) {
+  li {
+    margin-bottom: 1em
+  }
+}
+
+strong {
+  font-weight: bold
+}
+
+.c-nav {
+  background-color: #205085;
+  letter-spacing: 1px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 10000;
+  line-height: 0
+}
+
+@media (max-width: 728px) {
+  .c-nav {
+    position: relative
+  }
+}
+
+.c-nav.is-fixed {
+  position: fixed;
+  top: 0
+}
+
+@media (max-width: 728px) {
+  .c-nav.is-fixed {
+    position: relative
+  }
+}
+
+.c-nav a {
+  border-color: transparent;
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  padding: 1.5em .8em;
+  position: relative;
+  font-weight: 300
+}
+
+.c-nav a:before {
+  background-color: #dde3f0;
+  bottom: -100%;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: 200ms bottom;
+  width: 100%;
+  z-index: -1
+}
+
+.c-nav a:hover, .c-nav a.is-active {
+  color: #292929
+}
+
+.c-nav a:hover:before, .c-nav a.is-active:before {
+  bottom: 0;
+  transition: 200ms bottom
+}
+
+.c-nav__item {
+  display: inline-block;
+  color: #FFF;
+  margin-bottom: 0
+}
+
+@media (max-width: 728px) {
+  .c-nav__item {
+    border-bottom: 1px solid #849cc9;
+    display: block
+  }
+}
+
+.c-header {
+  background: #f5f5f5;
+  padding: 2em 0
+}
+
+.c-header h1 {
+  color: #36477c
+}
+
+@media (min-width: 600px) {
+  .c-header {
+    padding: 3em 0
+  }
+}
+
+.c-header p {
+  font-size: 1.15em
+}
+
+@media (min-width: 600px) {
+  .c-guidelines {
+    margin-top: 5em
+  }
+}
+
+.c-guidelines label {
+  font-size: 1.3em
+}
+
+@media (min-width: 600px) {
+  .c-guidelines label {
+    font-size: 1.5em
+  }
+}
+
+.c-guidelines label:target {
+  display: inline-block;
+  padding-top: 60px
+}
+
+.c-guidelines ul {
+  margin-left: 30px
+}
+
+.c-guidelines div[id]:before {
+  content: '';
+  display: block;
+  margin-top: -60px;
+  padding-top: 60px
+}
+
+@media (min-width: 600px) {
+  .c-guidelines div[id]:before {
+    margin-top: -50px;
+    padding-top: 50px
+  }
+}
+
+.c-guidelines input[type="checkbox"] {
+  cursor: pointer;
+  height: 15px;
+  left: -30px;
+  opacity: 0;
+  position: absolute;
+  top: 7px;
+  width: 15px;
+  z-index: 1
+}
+
+@media (min-width: 600px) {
+  .c-guidelines input[type="checkbox"] {
+    top: 10px
+  }
+}
+
+.c-guidelines b:before {
+  border: 1px solid #979797;
+  content: '';
+  cursor: pointer;
+  height: 15px;
+  left: -30px;
+  position: absolute;
+  top: 7px;
+  transition: all 200ms;
+  width: 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80%
+}
+
+@media (min-width: 600px) {
+  .c-guidelines b:before {
+    top: 10px
+  }
+}
+
+.c-guidelines input[type="checkbox"]:checked+b:before {
+  background-color: #36507c;
+  background-image: url("../assets/check.svg");
+  border-color: #36417c
+}
+
+.c-guidelines input[type="checkbox"]:focus+b:before {
+  transition: all 200ms;
+  border: 1px solid #36497c;
+  box-shadow: 0 2px 8px #4657a1
+}
+
+.c-guidelines textarea {
+  margin: 0.5em 0 .5em 0;
+  padding: 1em;
+  width: calc(100% - 30px);
+  height: 300px;
+  font-family:  -apple-system, BlinkMacSystemFont, "Oxygen",  "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Helvetica Neue", "Droid Sans", sans-serif;
+  color: #555;
+  font-size: 14px;
+  border: 1px solid #d5d5d5
+}
+
+.c-guidelines__preview label {
+  font-size: 1em
+}
+
+.c-guidelines__floaty-button {
+  bottom: 20px;
+  display: none;
+  left: 20px;
+  position: fixed;
+  z-index: 10000
+}
+
+.c-guidelines__options {
+  display: inline-block;
+  font-size: .8em
+}
+
+.c-guidelines__options input {
+  margin-right: .3em;
+  margin-right: .5em;
+  top: -2px;
+  position: relative
+}
+
+.c-guidelines__options label {
+  margin-right: 5px
+}
+
+.c-guidelines__copy {
+  margin-top: .8em
+}
+
+@media (min-width: 728px) {
+  .c-guidelines__copy {
+    float: right;
+    margin-top: 0
+  }
+}
+
+.ally-svg {
+  margin: 2.5em 0;
+  text-align: center
+}
+
+.ally-svg svg {
+  margin: 0 auto;
+  max-width: 200px
+}
+
+.c-footer {
+  font-size: 16px;
+  background: #222528;
+  color: #fff;
+  padding: 2em 0 1em
+}
+
+.c-footer a {
+  color: #374b7d;
+}
+
+.c-footer a:hover {
+  color: #374b7d;
+}
+
+.c-footer svg {
+  display: block;
+  margin: 2em 0 0;
+  max-width: 200px;
+  width: 100%
+}
+
+.c-hero {
+  padding: 3.5em 0;
+  color: #FFF;
+  background-color: #292929;
+}
+
+.c-hero h1 {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+  line-height: 1
+  color: #FFF;
+  border-bottom: 3px solid #205085;
+
+}
+
+@media (max-width: 600px) {
+  .c-hero h1 {
+    font-size: 3.2em;
+    color: #FFF;
+  }
+}
+
+.c-hero p {
+  font-size: 1.25em;
+  color: #FFF;
+
+  line-height: 1.2;
+  display: inline
+}
+
+.c-hero__links {
+  position: absolute;
+  top: 20px;
+  right: 20px
+}
+
+.c-hero__links a:first-of-type {
+  margin-right: 25px
+}
+
+.c-hero__links a {
+  color: #292929;
+  outline: none;
+  padding: .1em;
+  transition: all 200ms;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: .8em;
+  border-bottom: 1px solid transparent
+}
+
+.c-hero__links a:hover {
+  color: #555
+}
+
+@media (max-width: 600px) {
+  .c-hero__links {
+    position: static;
+    top: 10px;
+    right: auto;
+    margin: -1.5em 0 1.5em .8em
+  }
+}
